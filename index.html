@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://unpkg.com/compromise"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+ 
+</head>
+<body>
+    <form id="myForm">
+        <input type="file" id="csvFile" accept=".csv" />
+        <br />
+        <input type="submit" value="Submit" />
+
+        <div class="w3-red" id="csv-error" style="display:none">
+            <h2 class="w3-center">Csv file cannot be loaded</h2>
+            <p class="w3-center">Please add Time,Value Header to your csv file</p>
+          </div>
+     </form>
+</body>
+
+<script src="index.js"></script>
+</html>
